@@ -1,5 +1,5 @@
 
--- Q 1
+-- Q  1.Create a table named MusicPlaylist with columns: id, song_name, artist, genre, and duration.Insert at least 5 records representing songs from your favorite Spotify playlist, then write a SELECT statement to retrieve all columns for all songs.
 CREATE TABLE MusicPlaylist (
     id INT PRIMARY KEY,
     song_name VARCHAR(100),
