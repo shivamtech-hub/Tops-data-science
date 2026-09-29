@@ -1,7 +1,6 @@
 use newschema;
 select * from products;
 
-
 -- Q. 1. Write an SQL query to display all products from a 'products' table and sort them by price in ascending order, 
 -- similar to how Flipkart lists items from lowest to highest price.
 
@@ -13,7 +12,6 @@ order by price asc;
 select * from products
 order by price desc
 limit 5;
-
 
 -- Q:- 3. Given a 'movies' table with columns 'title', 'release_year', and 'rating', write an SQL query to list all movies sorted first by release_year 
 -- in descending order (latest first), then by rating in descending order (highest rated first).
