@@ -1,5 +1,6 @@
 
--- Q  1.Create a table named MusicPlaylist with columns: id, song_name, artist, genre, and duration.Insert at least 5 records representing songs from your favorite Spotify playlist, then write a SELECT statement to retrieve all columns for all songs.
+-- Q  1.Create a table named MusicPlaylist with columns: id, song_name, artist, genre, and duration.Insert at least 5 records
+   representing songs from your favorite Spotify playlist, then write a SELECT statement to retrieve all columns for all songs.
 CREATE TABLE MusicPlaylist (
     id INT PRIMARY KEY,
     song_name VARCHAR(100),
@@ -29,17 +30,20 @@ select song_name,artist
 from musicplaylist
 limit 3;
 
--- Q  3.Suppose you have a table named FoodOrders with columns: id, restaurant, food_item, and order_date. Write a SQL query to list all unique restaurant names where you have placed orders, using the DISTINCT keyword.
+-- Q  3.Suppose you have a table named FoodOrders with columns: id, restaurant, food_item, and order_date. Write a SQL query to list
+       all unique restaurant names where you have placed orders, using the DISTINCT keyword.
 
 select distinct restaurant_id
 from restaurants;
 
--- Q 4.Write a SQL query on the FoodOrders table to select food_item as 'Dish' and order_date as 'Date Ordered', displaying only these two columns with the column aliases in the output.
+-- Q 4.Write a SQL query on the FoodOrders table to select food_item as 'Dish' and order_date as 'Date Ordered', displaying 
+  only these two columns with the column aliases in the output.
 select items as dish,
 orders as ordered_data
 from restaurants;
 
--- Q 5.You tried running this query: SELECT DISTINCT food_item, restaurant FROM FoodOrders LIMIT 2, but it returns an error or doesn't work as expected. Identify and fix the mistake in the query.<br><br><em><strong>Hint:</strong> Check the correct placement and usage of the LIMIT keyword in SQL syntax.</em>
+-- Q 5.You tried running this query: SELECT DISTINCT food_item, restaurant FROM FoodOrders LIMIT 2, but it returns an error or doesn't work as expected.
+Identify and fix the mistake in the query.<br><br><em><strong>Hint:</strong> Check the correct placement and usage of the LIMIT keyword in SQL syntax.</em>
 select distinct items, restaurant_id
 from restaurants
 limit 2;
