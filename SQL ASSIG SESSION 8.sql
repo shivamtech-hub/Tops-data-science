@@ -23,7 +23,11 @@ INSERT INTO Orders (order_id, user_id, user_name, total_amount, payment_method,o
 (9, 109, 'Neha ', 2750.00, 'Wallet', '2026-09-09'),
 (10, 110, 'Amit', 1950.00, 'COD', '2026-09-10');
 
+
+select * from orders;
+
 -- Q. 2.Write an SQL query to count how many orders were placed using each payment_method in the Orders table, similar to how Zomato shows payment breakdown in analytics.
+
 select payment_method, count(*) AS ORDER_COUNT
 FROM orders
 group by payment_method;
@@ -44,15 +48,16 @@ having avg(total_amount) >300;
 select payment_method, avg(total_amount) AS avg_amount
 from orders
 group by payment_method
-having avg(total_amount) >3000;
+having avg(total_amount) >300;
 
 -- Q. 5 Explain the difference between WHERE and HAVING by giving one example query for each, using the Orders table.
 --  Your examples should show a scenario where WHERE and HAVING filter different things.
 
--- WHERE is used to filter individual rows based on a specific condition
+-- WHERE is used to filter individual rows based on a specific condition before grouping or applying aggregate functions.
+
 
 select * from orders
-where total_amount >2000;
+where total_amount >300;
 
 -- GROUP BY is used to group rows with the same values into summary groups, 
        -- usually with aggregate functions like COUNT(), SUM(), and AVG().
@@ -68,7 +73,7 @@ select payment_method,
 avg(total_amount) as avg_amount
 from orders
 group by payment_method
-having avg(total_amount)>3000;
+having avg(total_amount)>500;
 
 
 
