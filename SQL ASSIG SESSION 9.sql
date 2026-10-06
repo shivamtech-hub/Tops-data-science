@@ -29,9 +29,8 @@ INSERT INTO dishes (id, restaurant_id, dish_name, price) VALUES
 (4, 2, 'White Sauce Pasta', 220.00),
 (5, 3, 'Dal Makhani', 200.00);
 
--- Q2. Write an SQL INNER JOIN query to display each dish along with its restaurant name and city, similar to how Zomato shows dish details with the restaurant info.
+-- Q2. Write an SQL INNER JOIN query to display each dish along with its restaurant name and city, similar to how Zomato shows dish details with the restaurant info
 
-select * from restaurants;
 select d.dish_name,d.price,r.name as restaurant_name,r.city
 from dishes d
 inner join restaurants r
