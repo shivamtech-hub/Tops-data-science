@@ -1,6 +1,7 @@
 -- Q1. -- Q1. Install MySQL Community Server or SQLite on your system and verify the installation by connecting to
   the database using the command line or a GUI tool like MySQL Workbench or DB Browser for SQLite.
 
+mysql -u root -p
 select version();
 
 -- Q2.  Create a new database named 'foodie_app' to simulate a Zomato-style backend.
@@ -74,57 +75,7 @@ VALUES
 
 (24, 'Yash Patel', 'Gujarati Thali', 'REST024', 'ORD024', 4.8, 'Ashram Road', 'Ashram Road', 'Ahmedabad', 'Gujarat', '380009'),
 
-(25, 'Komal Mehta', 'Spring Roll', 'REST025', 'ORD025', 4.0, 'Prahlad Nagar', 'Corporate Road', 'Ahmedabad', 'Gujarat', '380015'),
-
-(26, 'Harsh Sharma', 'Veg Burger', 'REST026', 'ORD026', 4.3, 'Juhapura', 'Juhapura Road', 'Ahmedabad', 'Gujarat', '380055'),
-
-(27, 'Ayesha Khan', 'Chicken Roll', 'REST027', 'ORD027', 4.5, 'Makarba', 'Makarba Road', 'Ahmedabad', 'Gujarat', '380051'),
-
-(28, 'Nitin Patel', 'Rajma Chawal', 'REST028', 'ORD028', 4.2, 'Motera', 'Motera Stadium Road', 'Ahmedabad', 'Gujarat', '380005'),
-
-(29, 'Isha Desai', 'Samosa', 'REST029', 'ORD029', 4.1, 'Sabarmati', 'Sabarmati Road', 'Ahmedabad', 'Gujarat', '380005'),
-
-(30, 'Mohit Joshi', 'Pav Bhaji', 'REST030', 'ORD030', 4.6, 'Kankaria', 'Kankaria Road', 'Ahmedabad', 'Gujarat', '380022'),
-
-(31, 'Tina Shah', 'Malai Kofta', 'REST031', 'ORD031', 4.4, 'Jodhpur', 'Jodhpur Road', 'Ahmedabad', 'Gujarat', '380015'),
-
-(32, 'Varun Patel', 'Manchurian', 'REST032', 'ORD032', 4.0, 'Nikol', 'Nikol Road', 'Ahmedabad', 'Gujarat', '382350'),
-
-(33, 'Shreya Mehta', 'Mysore Dosa', 'REST033', 'ORD033', 4.7, 'Vastral', 'Vastral Road', 'Ahmedabad', 'Gujarat', '382418'),
-
-(34, 'Aditya Sharma', 'Tandoori Paneer', 'REST034', 'ORD034', 4.5, 'Sarkhej', 'Sarkhej Road', 'Ahmedabad', 'Gujarat', '382210'),
-
-(35, 'Muskan Patel', 'Veg Pulao', 'REST035', 'ORD035', 4.2, 'Hatkeshwar', 'Hatkeshwar Road', 'Ahmedabad', 'Gujarat', '380026'),
-
-(36, 'Vishal Gupta', 'Butter Naan', 'REST036', 'ORD036', 4.6, 'Amraiwadi', 'Amraiwadi Road', 'Ahmedabad', 'Gujarat', '380026'),
-
-(37, 'Payal Shah', 'French Fries', 'REST037', 'ORD037', 4.3, 'Law Garden', 'Law Garden Road', 'Ahmedabad', 'Gujarat', '380006'),
-
-(38, 'Kunal Mehta', 'Cheese Sandwich', 'REST038', 'ORD038', 4.1, 'C G Road', 'C G Road', 'Ahmedabad', 'Gujarat', '380009'),
-
-(39, 'Jignesh Patel', 'Punjabi Thali', 'REST039', 'ORD039', 4.8, 'Gurukul', 'Gurukul Road', 'Ahmedabad', 'Gujarat', '380052'),
-
-(40, 'Bhavna Joshi', 'Veg Noodles', 'REST040', 'ORD040', 4.4, 'Shahibaug', 'Shahibaug Road', 'Ahmedabad', 'Gujarat', '380004'),
-
-(41, 'Deepak Shah', 'Kathi Roll', 'REST041', 'ORD041', 4.2, 'Bapunagar', 'Bapunagar Road', 'Ahmedabad', 'Gujarat', '380024'),
-
-(42, 'Pallavi Patel', 'Dahi Puri', 'REST042', 'ORD042', 4.5, 'Gheekanta', 'Gheekanta Road', 'Ahmedabad', 'Gujarat', '380001'),
-
-(43, 'Sameer Khan', 'Chicken Tikka', 'REST043', 'ORD043', 4.7, 'Jamalpur', 'Jamalpur Road', 'Ahmedabad', 'Gujarat', '380001'),
-
-(44, 'Rashmi Mehta', 'Veg Kolhapuri', 'REST044', 'ORD044', 4.3, 'Ambawadi', 'Ambawadi Road', 'Ahmedabad', 'Gujarat', '380015'),
-
-(45, 'Tarun Joshi', 'Cheese Burst Pizza', 'REST045', 'ORD045', 4.6, 'Thaltej', 'Thaltej Road', 'Ahmedabad', 'Gujarat', '380054'),
-
-(46, 'Kriti Sharma', 'Hara Bhara Kabab', 'REST046', 'ORD046', 4.4, 'Bodakdev', 'Bodakdev Road', 'Ahmedabad', 'Gujarat', '380054'),
-
-(47, 'Sanjay Patel', 'Pav Sandwich', 'REST047', 'ORD047', 4.1, 'Chandlodia', 'Chandlodia Road', 'Ahmedabad', 'Gujarat', '382481'),
-
-(48, 'Mansi Shah', 'Veg Frankie', 'REST048', 'ORD048', 4.5, 'Gota', 'Gota Road', 'Ahmedabad', 'Gujarat', '382481'),
-
-(49, 'Abhishek Mehta', 'Mango Lassi', 'REST049', 'ORD049', 4.3, 'Bopal', 'Bopal Road', 'Ahmedabad', 'Gujarat', '380058'),
-
-(50, 'Jyoti Patel', 'Gulab Jamun', 'REST050', 'ORD050', 4.8, 'Navrangpura', 'Navrangpura Road', 'Ahmedabad', 'Gujarat', '380009');
+(25, 'Komal Mehta', 'Spring Roll', 'REST025', 'ORD025', 4.0, 'Prahlad Nagar', 'Corporate Road', 'Ahmedabad', 'Gujarat', '380015');
   
 select * from restaurants;
 
@@ -211,17 +162,15 @@ CREATE TABLE test_users (
     user_id INT PRIMARY KEY,
     username VARCHAR(50)
     email VARCHAR(100),
-    phone_number VARCHAR(15),
-    created_at DATETIME
-);
+    phone_number VARCHAR(1  5),
+    created_at DATETIME);
 -- Q5 Correct
 CREATE TABLE test_users (
     user_id INT PRIMARY KEY,
     username VARCHAR(50),
     email VARCHAR(100),
     phone_number VARCHAR(15),
-    created_at DATETIME
-);
+    created_at DATETIME);
 
 
 
